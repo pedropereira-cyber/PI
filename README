@@ -1,0 +1,37 @@
+Sistema de Controle de Acesso com ESP32 + RFID + Servo + LCD
+
+Este projeto implementa um sistema de controle de acesso utilizando um ESP32, um leitor RFID MFRC522, um servo motor, um display LCD I2C (16x2), LEDs indicadores e um botão para gerenciar o modo administrador.
+
+O sistema permite:
+
+Cadastrar cartões comuns
+
+Cadastrar cartões administradores
+
+Remover cartões cadastrados
+
+Liberar ou negar acesso com servo e LEDs
+
+Exibir mensagens no LCD
+
+Armazenar cartões na memória interna (Preferences)
+
+📌 Funcionalidades Principais
+
+Leitura de cartões RFID
+
+Armazenamento interno (NVS/Preferences) — persiste mesmo sem energia
+
+Modo administrador, ativado com botão + cartão admin
+
+Cadastro/remoção de cartões
+
+Abertura de porta via servo
+
+Feedback via:
+
+LCD I2C
+
+LED verde (acesso liberado)
+
+LED vermelho (acesso negado)
