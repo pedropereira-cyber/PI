@@ -1,0 +1,46 @@
+Instalação
+1. Instale o Arduino IDE
+2. Instale o suporte ao ESP32
+3. Instale as bibliotecas necessárias
+4. Conecte os componentes conforme os pinos indicados
+5. Carregue o código
+
+1. Funcionamento normal
+
+Aproxime um cartão.
+
+Se estiver cadastrado → Acesso Liberado
+
+Caso contrário → Acesso Negado
+
+2. Entrar no modo ADMIN
+
+Segure o botão e aproxime um cartão administrador.
+
+O LCD mostrará:
+
+Modo ADMIN
+Aprox. um cartao
+
+3. No modo administrador
+
+Aproxime um cartão e acontecerá:
+
+Se já estiver cadastrado
+
+→ Será removido da memória.
+
+Se NÃO estiver cadastrado
+
+Segure o botão → cadastra como Admin (2)
+
+Solte o botão → cadastra como Comum (1)
+
+Após cadastrar/remover, o sistema sai do modo admin.
+
+Estrutura da Memória (Preferences)
+Valor	Tipo de acesso
+"1"	Comum
+"2"	Administrador
+
+A chave é o próprio ID do cartão RFID.
